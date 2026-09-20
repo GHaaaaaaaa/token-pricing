@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "ai-token-pricing"
-version = "0.1.0"
+version = "0.1.1"
 description = "Token economics for AI products: blended token cost, profitable-plan validation (SAFE/WARNING/UNSAFE), max safe quota, and overage pricing. Zero dependencies."
 readme = { file = "README.md", content-type = "text/markdown" }
 requires-python = ">=3.8"

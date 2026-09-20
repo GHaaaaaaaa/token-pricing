@@ -33,7 +33,7 @@ from .economics import (
 )
 from .catalog import MODEL_PRICING_2026, blended_cost_for_model
 
-__version__ = "0.1.0"
+__version__ = "0.1.1"
 
 __all__ = [
     "Plan",
