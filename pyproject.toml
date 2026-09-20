@@ -1,0 +1,45 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "token-pricing"
+version = "0.1.0"
+description = "Token economics for AI products: blended token cost, profitable-plan validation (SAFE/WARNING/UNSAFE), max safe quota, and overage pricing. Zero dependencies."
+readme = { file = "README.md", content-type = "text/markdown" }
+requires-python = ">=3.8"
+license = { text = "MIT" }
+authors = [{ name = "TingStudio", email = "tingstudio.ai@gmail.com" }]
+keywords = [
+    "llm", "token", "pricing", "ai", "saas", "usage-based-billing",
+    "metered-billing", "gross-margin", "openai", "anthropic", "stripe",
+    "llm-cost", "token-cost",
+]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Topic :: Office/Business :: Financial",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Intended Audience :: Developers",
+]
+dependencies = []
+
+[project.urls]
+Homepage = "https://tokenkit.tingstudioai.com/"
+"Free Calculator" = "https://tokenkit.tingstudioai.com/calculator"
+Repository = "https://github.com/tingstudio/token-pricing"
+Issues = "https://github.com/tingstudio/token-pricing/issues"
+
+[project.scripts]
+token-pricing = "token_pricing.cli:main"
+
+[tool.setuptools]
+package-dir = { "" = "src" }
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+addopts = "-q"
