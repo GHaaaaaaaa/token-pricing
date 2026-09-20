@@ -1,5 +1,5 @@
 """
-Command-line interface for token-pricing.
+Command-line interface for ai-token-pricing.
 
 Examples
 --------
@@ -92,7 +92,7 @@ def cmd_tiers(args):
 
 def build_parser():
     p = argparse.ArgumentParser(
-        prog="token-pricing",
+        prog="ai-token-pricing",
         description="Token economics for AI products: blended cost, "
         "profitable-plan validation, max safe quota.",
     )

@@ -3,7 +3,7 @@ requires = ["setuptools>=68", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "token-pricing"
+name = "ai-token-pricing"
 version = "0.1.0"
 description = "Token economics for AI products: blended token cost, profitable-plan validation (SAFE/WARNING/UNSAFE), max safe quota, and overage pricing. Zero dependencies."
 readme = { file = "README.md", content-type = "text/markdown" }
@@ -29,11 +29,11 @@ dependencies = []
 [project.urls]
 Homepage = "https://tokenkit.tingstudioai.com/"
 "Free Calculator" = "https://tokenkit.tingstudioai.com/calculator"
-Repository = "https://github.com/tingstudio/token-pricing"
-Issues = "https://github.com/tingstudio/token-pricing/issues"
+Repository = "https://github.com/GHaaaaaaaa/token-pricing"
+Issues = "https://github.com/GHaaaaaaaa/token-pricing/issues"
 
 [project.scripts]
-token-pricing = "token_pricing.cli:main"
+ai-token-pricing = "token_pricing.cli:main"
 
 [tool.setuptools]
 package-dir = { "" = "src" }
